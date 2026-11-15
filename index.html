@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thuli Keroane | Financial Data Science Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5f8;
+      color: #482638;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #651b3d;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header strong { font-size: 19px; }
+
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+
+    nav a {
+      color: #ffe0eb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #ff9fc1; }
+
+    .hero {
+      background: linear-gradient(135deg, #651b3d, #a83266);
+      color: white;
+      padding: 90px 8%;
+    }
+
+    .hero .tag {
+      color: #ffb5d0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 55px);
+      margin: 15px 0;
+    }
+
+    .hero p { max-width: 650px; color: #ffe5ef; }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 11px 22px;
+      background: #f28bb4;
+      color: #54142f;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover { background: #ffc1d7; }
+
+    main { max-width: 1050px; margin: auto; padding: 45px 22px; }
+
+    section { margin-bottom: 55px; scroll-margin-top: 25px; }
+
+    h2 {
+      color: #8f2453;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .intro { max-width: 800px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border: 1px solid #f2c5d7;
+      border-radius: 9px;
+    }
+
+    .card h3 { color: #a83266; margin-bottom: 10px; }
+
+    .card p { font-size: 14px; }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tag-list span {
+      background: #fbdce8;
+      color: #81244c;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .goal {
+      border-left: 3px solid #d85b91;
+      padding: 5px 0 5px 20px;
+      margin-bottom: 25px;
+    }
+
+    .goal h3 { color: #a83266; margin-bottom: 8px; }
+
+    footer {
+      background: #651b3d;
+      color: #ffe0eb;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    footer a { color: #ffb5d0; }
+
+    @media(max-width: 600px) {
+      header { padding: 20px 6%; }
+      nav { gap: 12px; }
+      .hero { padding: 65px 7%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>Thuli Keroane</strong>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#roadmap">Roadmap</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="tag">Financial Services | Data Science | Analytics</p>
+  <h1>Building insights through data.</h1>
+  <p>
+    Economics graduate with an interest in financial data science,
+    statistical modelling and the application of data to financial problems.
+  </p>
+  <a class="button" href="#projects">Explore My Portfolio</a>
+</div>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="intro">
+      I am a BCom Economic Sciences graduate from North-West University,
+      with a background in Economics and Informatics and an interest in
+      the application of data science within financial services.
+      I am particularly interested in using programming, mathematics
+      and statistics to analyse financial data, develop predictive
+      models and support data-driven decision-making. My goal is to
+      build practical experience and technical expertise in this field,
+      with the longer-term ambition of progressing into Quantitative Analytics.
+    </p>
+    <div class="tag-list">
+      <span>Economics</span>
+      <span>Informatics</span>
+      <span>Financial Services</span>
+      <span>Data Science</span>
+      <span>Quantitative Analytics</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Ideas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>01. Credit Risk Modelling</h3>
+        <p>
+          Develop a predictive model using an open credit dataset to
+          identify factors associated with loan defaults and estimate
+          Probability of Default (PD).
+        </p>
+        <p><strong>Tools:</strong> Python, Pandas, NumPy, Scikit-learn</p>
+        <p><strong>Methods:</strong> Logistic regression, exploratory
+          data analysis and model evaluation.</p>
+        <p><em>Status: Planned</em></p>
+      </div>
+      <div class="card">
+        <h3>02. Financial Transaction Analysis</h3>
+        <p>
+          Analyse financial transaction data to identify spending
+          patterns, categorise transactions and communicate financial
+          insights through visualisations.
+        </p>
+        <p><strong>Tools:</strong> Python, SQL, Power BI</p>
+        <p><strong>Methods:</strong> Data cleaning, categorisation,
+          trend analysis and visualisation.</p>
+        <p><em>Status: Planned</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills to Develop</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Technical: Statistical Modelling with Python</h3>
+        <p>
+          Strengthen my understanding of probability, statistical
+          inference, regression analysis and predictive modelling.
+          Develop practical skills using Pandas, NumPy and Scikit-learn
+          to analyse financial datasets and build predictive models.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Soft: Communicating Data Insights</h3>
+        <p>
+          Improve my ability to explain analytical findings and
+          technical results clearly to different audiences, translating
+          complex data into meaningful business insights.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Learning Roadmap</h2>
+    <div class="goal">
+      <h3>30-Day Goal</h3>
+      <p>
+        Complete the initial stages of my credit risk modelling project.
+        Refresh Python fundamentals, practise Pandas and NumPy, explore
+        an open credit dataset, conduct exploratory data analysis and
+        publish an initial notebook on GitHub.
+      </p>
+    </div>
+    <div class="goal">
+      <h3>6-Month Goal</h3>
+      <p>
+        Build a portfolio containing at least two completed financial
+        data projects. Complete and evaluate a credit risk prediction
+        model, develop a financial transaction analysis project,
+        strengthen Python, SQL and statistical modelling skills, and
+        document my methodologies and findings on GitHub.
+      </p>
+    </div>
+  </section>
+
+  <section id="career">
+    <h2>Career Direction</h2>
+    <p class="intro">
+      My target role is Financial Data Scientist within the financial
+      services industry. I aim to develop expertise in financial data
+      analysis, predictive modelling and statistical methods, building
+      a foundation for future opportunities in Quantitative Analytics.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>Financial Data Science Portfolio | Thuli Keroane</p>
+  <p><a href="https://github.com/thulikeroane-pixel">GitHub Profile</a></p>
+</footer>
+
+</body>
+</html>
